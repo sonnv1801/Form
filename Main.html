@@ -14,45 +14,54 @@
 <body>
     
         <h1>Bài Tập Cuối Kỳ - Font Đăng Ký</h1>
-    <div class="container container1">
+    <div class="container container1" id="reset">
         <h3>Tạo tài khoản</h3>
         <b>Vui lòng điền thông thông tin để đăng ký</b>
         <hr>
         <div class="row">
             <div class="col-xl-12 box">
+              <form action="#" id="myForm">
                <div class="input-group flex-nowrap user">
                    <span class="input-group-text" id="addon-wrapping" id="user" ><i class="fa fa-user-secret" style="font-size:24px"></i></span>
-                   <input type="text" id="username" class="form-control"  placeholder="Họ và tên" aria-label="Username" aria-describedby="addon-wrapping">
-                   
+                   <input type="text" id="username" class="form-control" onkeydown="checkUsername()" placeholder="Họ và tên" aria-label="Username" aria-describedby="addon-wrapping">
                  </div>
+                </form>
             </div>
             <div class="col-xl-12 box">
+              <form action="#" id="myForm">
                <div class="input-group flex-nowrap user">
                    <span class="input-group-text" id="addon-wrapping"><i class="fa fa-phone-square" style="font-size:24px"></i></span>
-                   <input type="text" id="Phone" class="form-control" oninput="Check()" placeholder="Số điện thoại  " aria-label="Phone" aria-describedby="addon-wrapping">
+                   <input type="text" id="Phone" class="form-control" onkeydown="CheckPhone()" placeholder="Số điện thoại  " aria-label="Phone" aria-describedby="addon-wrapping">
                  </div>
+                </form>
             </div>
             <div class="col-xl-12 box">
+              <form action="#" id="user">
                <div class="input-group flex-nowrap user">
                    <span class="input-group-text" id="addon-wrapping"><i class="fa fa-envelope" style="font-size:24px"></i></span>
-                   <input type="text" id="Email" class="form-control"  oninput="checkEmail()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Emai" aria-label="Date" aria-describedby="addon-wrapping">
+                   <input type="text" id="Email" class="form-control" onkeydown="checkEmail()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Emai" aria-label="Date" aria-describedby="addon-wrapping">
                  </div>
+                </form>
             </div>
             <div class="col-xl-12 box">
+              <form action="#" id="password">
                <div class="input-group flex-nowrap user">
                    <span class="input-group-text" id="addon-wrapping"><i class="fa fa-key" style="font-size:21px"></i></span>
-                   <input type="password" id="passWord" class="form-control" placeholder="Mật khẩu" aria-label="Password" minlength="8" aria-describedby="addon-wrapping">
+                   <input type="password" id="passWord" class="form-control" onkeydown="password()" placeholder="Mật khẩu" aria-label="Password" minlength="8" aria-describedby="addon-wrapping">
                  </div>
+                </form>
             </div>
             <div class="col-xl-12 box">
+              <form action="#" id="myForm">
                <div class="input-group flex-nowrap user">
                    <span class="input-group-text" id="addon-wrapping"><i class="fa fa-key" style="font-size:21px"></i></span>
-                   <input type="password" id="passWordR" class="form-control" placeholder="Nhập lại mật khẩu" aria-label="Password" aria-describedby="addon-wrapping">
+                   <input type="password" id="passWordR" class="form-control" onkeydown="checkPassword()" placeholder="Nhập lại mật khẩu" aria-label="Password" aria-describedby="addon-wrapping">
                  </div>
+                </form>
             </div>
            <div class="col-xl-12 box1">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="check">
+                <input class="form-check-input" type="checkbox" value="" name="checkbox" id="action">
                 <label class="form-check-label" for="flexCheckDefault">
                   BẠN CÓ ĐỒNG Ý VỚI ĐIỀU KHOẢN CỦA CHÚNG TÔI
                 </label>
